@@ -1,0 +1,28 @@
+
+
+
+
+<h1 style="color:lightblue;">Shops#show</h1>
+<p style="color:lightblue;">Find me in app/views/shops/show.html.erb</p>
+<p style="color:blue;"id="notice"><%= notice %></p>
+<p style="color:blue;">
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+
+<p style="color:blue;">
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+
+<% @product.assignments.each do |assignment| %>
+
+  <%= assignment.color.color %>
+  <%= assignment.quantity %>
+
+<% end %>
+
+<%= link_to 'Back', root_path %>
+
+
